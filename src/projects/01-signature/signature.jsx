@@ -30,32 +30,34 @@ const signature = () => {
       <div>
         <Title classes={"title"} text={!name ? "Name" : name} />
         <Title classes={"subtitle"} text={date ? date : "DoB"} />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere,
-          possimus consectetur distinctio doloremque, facilis ex quia quidem
-          consequatur quibusdam eius harum quasi vel reiciendis earum maxime,
-          suscipit magnam eum iusto.
-        </p>
+        <ul style={{ listStyleType: "none" }}>
+          <li>Here in this app I used Vite + React.</li>
+          <li>
+            I practiced here conditional rendering, props, propTypes, useState,
+            importing and using react components of React.
+          </li>
+          <li>I practiced here inline styling, css file stying of CSS.</li>
+        </ul>
       </div>
 
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
+      <div style={{ display: "flex", justifyContent: "space-around" }}>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          value={name}
+          onChange={handleName}
+          style={inputStyle}
+        />
+        <div>
+          <span style={{ fontSize: "2rem", marginRight: "1rem" }}>DoB: </span>
           <input
-            type="text"
-            placeholder="Enter your name"
-            value={name}
-            onChange={handleName}
+            type="date"
+            value={date}
+            onChange={handleDate}
             style={inputStyle}
           />
-          <div>
-            <span style={{ fontSize: "2rem", marginRight: "1rem" }}>DoB: </span>
-            <input
-              type="date"
-              value={date}
-              onChange={handleDate}
-              style={inputStyle}
-            />
-          </div>
         </div>
+      </div>
     </div>
   );
 };
