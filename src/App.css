@@ -6,13 +6,22 @@
 }
 
 .title {
-  font-size: 3.7rem;
-  font-weight: 500;
+  font-size: clamp(1.5rem, 5vw, 4rem);
   margin-bottom: 1rem;
 }
 
 .subtitle {
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: clamp(1rem, 3vw, 2rem);
   margin-bottom: 1rem;
+}
+
+.btnStyle {
+  background-color: green;
+  color: white;
+  padding: clamp(0.4rem, 1vw, 1rem) clamp(0.8rem, 2vw, 2rem);
+  border: none;
+  border-radius: 5px;
+  font-size: clamp(0.3rem, 3vw, 1.2rem);
+  font-weight: 800;
+  cursor: pointer;
 }

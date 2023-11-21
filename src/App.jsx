@@ -1,11 +1,13 @@
 import './App.css'
-import Signature from './projects/01-signature/signature'
+import RandomColor from './projects/RandomColor/RandomColor'
+// import Signature from './projects/01-signature/signature'
 
 function App() {
 
   return (
     <>
-      <Signature />
+      {/* <Signature /> */}
+      <RandomColor />
     </>
   )
 }
