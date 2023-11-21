@@ -45,7 +45,7 @@ const RandomColor = () => {
           margin: "1rem auto",
           textAlign: "left",
           padding: "1rem",
-          borderRadius: "8px"
+          borderRadius: "8px",
         }}
       >
         <h2
