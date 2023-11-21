@@ -40,11 +40,12 @@ const RandomColor = () => {
       </div>
       <div
         style={{
-          border: `1px solid ${buttonBgColor}`,
+          border: `1px solid ${fontColor}`,
           width: "20rem",
           margin: "1rem auto",
           textAlign: "left",
           padding: "1rem",
+          borderRadius: "8px"
         }}
       >
         <h2
