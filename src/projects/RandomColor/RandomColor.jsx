@@ -22,12 +22,6 @@ const RandomColor = () => {
     document.body.style.color = fontColor;
     e.target.style.backgroundColor = buttonBgColor;
     e.target.style.color = buttonColor;
-
-    const colorInfoElement = document.querySelectorAll("span");
-    colorInfoElement[0].textContent = fontColor;
-    colorInfoElement[1].textContent = bgColor;
-    colorInfoElement[2].textContent = buttonBgColor;
-    colorInfoElement[3].textContent = buttonColor;
   };
 
   return (
@@ -40,7 +34,7 @@ const RandomColor = () => {
       </div>
       <div
         style={{
-          border: `1px solid ${fontColor}`,
+          border: `2px solid ${fontColor}`,
           width: "20rem",
           margin: "1rem auto",
           textAlign: "left",
